@@ -7,13 +7,15 @@ import bgStars from "./images/bg-stars.svg";
 
 function App() {
   return (
-    <div className="content">
-      <Message/>
-      <Countdown/>
-      <Social/>
+    <div class="body">
       <div class="background">
-        <img src={bgStars} alt="stars" className="bg-stars bg"/>
-        <img src={patternHills} alt="hills" className="hills bg"/>
+          <img src={bgStars} alt="stars" className="bg-stars bg"/>
+          <img src={patternHills} alt="hills" className="hills bg"/>
+      </div>
+      <div className="content">
+        <Message/>
+        <Countdown/>
+        <Social/>
       </div>
     </div>
   );

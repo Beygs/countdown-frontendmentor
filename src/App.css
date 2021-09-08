@@ -14,9 +14,16 @@ html {
 
 body,
 #root,
+.body,
+.background,
 .content {
     min-height: 100vh;
     text-align: center;
+}
+
+.background {
+  position: fixed;
+  width: 100%;
 }
 
 .content {
@@ -34,14 +41,10 @@ body,
   color: white;
 }
 
-.number {
-  font-size: 4rem;
-  color: var(--soft-red);
-}
-
 .bg {
   position: fixed;
   width: 100%;
+  left: 0;
 }
 
 .bg-stars {
@@ -67,6 +70,7 @@ body,
 .countdown {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .count {
@@ -75,4 +79,28 @@ body,
 
 .social img {
   margin: 1rem;
+}
+
+.card {
+  position: relative;
+  width: 8em;
+  min-height: 5rem;
+}
+
+.card .front,
+.card .back {
+  background-color: var(--dark-desaturated-blue);
+  padding: 1rem 1.5rem;
+  border-radius: 10%;
+  min-width: 6rem;
+  /* width: auto; */
+  /* height: 100%; */
+  position: absolute;
+  overflow: hidden;
+  color: var(--soft-red);
+  font-size: 4rem;
+  text-align: center;
+  /* margin: 1rem; */
+  top: 0;
+  left: 0;
 }
